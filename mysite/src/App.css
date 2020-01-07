@@ -1,38 +1,128 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web:300,400,900");
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    line-height:1;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+body {
+    background: black;
+    box-sizing: border-box;
 }
 
-.App-link {
-  color: #61dafb;
+.full-name {
+    font-family: 'Titillium Web', sans-serif;
+    color: white;
+    text-transform: uppercase;
+    font-style: normal;
+    font-size: 3.5rem;
+    font-weight: 500;
+    padding: 4rem;
+    text-decoration: none;
+    border: solid white;
+    border-top: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.full-name:hover {
+    background: white;
+    color: black;
+    height: 100%
+}
+
+header {
+    display: flex;
+    align-content: flex-end;
+    justify-content: space-evenly;
+    margin-left: 30%
+}
+
+
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    height: 100%; 
+    width: 25%; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0; 
+    left: 0;
+    background-color:rgba(0,0,0,0.2); 
+    overflow-x: hidden; 
+    border-right: solid;
+    border-color: white;
+}
+
+.nav a {
+    margin: 1rem;
+    width: 100%;
+    font-family: 'Titillium Web', sans-serif;
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    display: flex;
+    align-content: center;
+    outline: solid 1px;
+}
+
+.nav a:hover {
+    outline: solid;
+    background: white;
+    color: black;
+    margin-left: 2rem;
+    transition: 0.5s ease-in-out;
+}
+
+.custom-footer {
+  position: absolute;
+  bottom: 0;
+  border-top: solid;
+  border-color: white;
+  border-width: 1px;
+  box-sizing: border-box;
+  width: 25%;
+  height: 35px;
+  background-image: linear-gradient(45deg, #000000 38.46%, #ffffff 38.46%, #ffffff 50%, #000000 50%, #000000 88.46%, #ffffff 88.46%, #ffffff 100%);
+  background-size: 18.38px 18.38px;
+}
+
+.custom-footer2 {
+  position: absolute;
+  bottom: 0;
+  border-top: solid;
+  border-color: white;
+  border-width: 1px;
+  box-sizing: border-box;
+  height: 35px;
+  margin-left: 25%;
+  background-image: linear-gradient(133deg, #000000 38.46%, #ffffff 38.46%, #ffffff 50%, #000000 50%, #000000 88.46%, #ffffff 88.46%, #ffffff 100%);
+  background-size: 18.38px 18.38px;
 }
