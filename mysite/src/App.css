@@ -47,12 +47,17 @@ body {
     text-decoration: none;
     border: solid white;
     border-top: 0;
+    transition: 0.7s;
 }
 
 .full-name:hover {
     background: white;
     color: black;
-    height: 100%
+    height: 100%;
+    outline: 5px solid black;
+    outline-offset: -10px;
+    transition: 0.7s;
+    transition-timing-function: ease-out;
 }
 
 header {
@@ -91,6 +96,8 @@ header {
     display: flex;
     align-content: center;
     outline: solid 1px;
+    transition: 0.7s;
+    transition-timing-function: ease-out;
 }
 
 .nav a:hover {
@@ -98,7 +105,8 @@ header {
     background: white;
     color: black;
     margin-left: 2rem;
-    transition: 0.5s ease-in-out;
+    transition: 0.7s;
+    transition-timing-function: ease-out;
 }
 
 .custom-footer {
@@ -110,19 +118,31 @@ header {
   box-sizing: border-box;
   width: 25%;
   height: 35px;
+  background-image: linear-gradient(135deg, #000000 38.46%, #ffffff 38.46%, #ffffff 50%, #000000 50%, #000000 88.46%, #ffffff 88.46%, #ffffff 100%);
+  background-size: 18.38px 18.38px;
+}
+
+.custom-header {
+  position: absolute;
+  top: 0;
+  border-bottom: solid;
+  border-color: white;
+  border-width: 1px;
+  box-sizing: border-box;
+  width: 25%;
+  height: 35px;
   background-image: linear-gradient(45deg, #000000 38.46%, #ffffff 38.46%, #ffffff 50%, #000000 50%, #000000 88.46%, #ffffff 88.46%, #ffffff 100%);
   background-size: 18.38px 18.38px;
 }
 
-.custom-footer2 {
-  position: absolute;
-  bottom: 0;
-  border-top: solid;
-  border-color: white;
-  border-width: 1px;
-  box-sizing: border-box;
-  height: 35px;
-  margin-left: 25%;
-  background-image: linear-gradient(133deg, #000000 38.46%, #ffffff 38.46%, #ffffff 50%, #000000 50%, #000000 88.46%, #ffffff 88.46%, #ffffff 100%);
-  background-size: 18.38px 18.38px;
+.copyright {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 3rem;
+    height: 10rem;
+    border: solid white;
+    border-right: 0;
+    border-width: 1px;
+    margin-bottom: 20px;
 }
