@@ -1,0 +1,91 @@
+.contact-form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 8rem;
+    margin-left: 10rem;
+}
+
+h1 {
+    font-family: 'Titillium Web', sans-serif;
+    color: white;
+    font-weight: 100;
+    font-size: 24pt;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 18pt;
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+input {
+    font-family: 'Titilium Web', sans-serif;
+    font-size: 12pt;
+    height: 2rem;
+    width: 20rem;
+    padding: 1rem;
+    margin: 2px;
+    background: black;
+    color: white;
+    border: solid white 1px;
+    transition: 0.7s ease-out;
+}
+
+input:focus {
+    outline: 0;
+    width: 30rem;
+    background: white;
+    border: solid black 2px;
+    color: black;
+    transition: 0.7s ease-out;
+    margin-left: 10rem;
+}
+
+input:hover {
+    background: white;
+    color: black;
+}
+
+.submit {
+    border: none;
+    font-family: 'Titilium Web', sans-serif;
+    font-size: 14pt;
+    font-weight: 100;
+    padding: 2px;
+    margin-top: 5px;
+    width: 10rem;
+    transition: 0.7s ease-out;
+}
+
+.submit:focus {
+    background: white;
+    color: black;
+    width: 15rem;
+    margin-right: 10rem;
+    height: 4rem;
+    transition: 0.7s ease-out;
+}
+
+.submit:hover {
+    background: white;
+    color: black;
+    width: 15rem;
+    height: 4rem;
+    outline: 2px solid black;
+    outline-offset: -10px;
+    transition: 0.7s ease-out;
+}
+
+
+.message-input:focus {
+    height: 5rem;
+    display: flex;
+    text-align: start, left;
+    padding-bottom: 5rem;
+    padding-top: 0;
+}

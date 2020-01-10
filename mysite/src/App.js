@@ -8,7 +8,6 @@ import Contact from './components/Contact'
 
 class App extends Component {
 
-  postMessage
 
   render (){
     return (
@@ -21,22 +20,18 @@ class App extends Component {
               <Link className='link' to='/home/'>Home</Link>
               <Link className='link' to='/about/'>About</Link>
               <Link className='link' to='/links/'>Links</Link>
-              <Link className='link' to='/contact'>Contact</Link>
+              <Link className='link' to='/contact/'>Contact</Link>
             </div>
             <Switch>
               <Route path='/home/' component={Home}/>
               <Route path='/about/' component={About}/>
               <Route path='/links/' component={Links}/>
-              <Route 
-                path='/contact/' 
-                component={Contact}
-                render={(props) => <Contact {...props}/>}
-              />
+              <Route path='/contact/' component={Contact}/>
             </Switch>
           </Router>
           <div className="custom-footer"></div>
           <div className="custom-header"></div>
-          <div className="copyright"></div>
+          <div className="copyright">© JMW 2020</div>
 
       </div>
     );

@@ -53,7 +53,6 @@ body {
 .full-name:hover {
     background: white;
     color: black;
-    height: 100%;
     outline: 5px solid black;
     outline-offset: -10px;
     transition: 0.7s;
@@ -84,6 +83,7 @@ header {
     overflow-x: hidden; 
     border-right: solid;
     border-color: white;
+    z-index: 1;
 }
 
 .nav a {
@@ -120,6 +120,13 @@ header {
   height: 35px;
   background-image: linear-gradient(135deg, #000000 38.46%, #ffffff 38.46%, #ffffff 50%, #000000 50%, #000000 88.46%, #ffffff 88.46%, #ffffff 100%);
   background-size: 18.38px 18.38px;
+  z-index: 2;
+}
+
+.custom-footer:hover {
+    transition: background-image background-size 1s;
+    background-image: linear-gradient(45deg, #000000 38.46%, #ffffff 38.46%, #ffffff 50%, #000000 50%, #000000 88.46%, #ffffff 88.46%, #ffffff 100%);
+    background-size: 18.38px 18.38px;
 }
 
 .custom-header {
@@ -133,10 +140,18 @@ header {
   height: 35px;
   background-image: linear-gradient(45deg, #000000 38.46%, #ffffff 38.46%, #ffffff 50%, #000000 50%, #000000 88.46%, #ffffff 88.46%, #ffffff 100%);
   background-size: 18.38px 18.38px;
+  z-index: 2;
+}
+
+.custom-header:hover {
+    transition: all 1s;
+    background-image: linear-gradient(135deg, #000000 38.46%, #ffffff 38.46%, #ffffff 50%, #000000 50%, #000000 88.46%, #ffffff 88.46%, #ffffff 100%);
+    background-size: 18.38px 18.38px;
 }
 
 .copyright {
     position: absolute;
+    text-combine-upright: all;
     bottom: 0;
     right: 0;
     width: 3rem;
@@ -144,5 +159,25 @@ header {
     border: solid white;
     border-right: 0;
     border-width: 1px;
+    font-family: 'Titillium Web', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-content: center;
     margin-bottom: 20px;
+    transition: 0.7s;
+}
+
+.copyright:hover {
+    transition: 0.7s;
+    color: white;
+    font-size: 20pt;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 20rem;
+    width: 4rem;
 }
