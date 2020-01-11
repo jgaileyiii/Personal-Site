@@ -181,3 +181,37 @@ header {
     height: 20rem;
     width: 4rem;
 }
+
+.easter-egg {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-image: url(components/Inverted_pentagram.svg.png);
+    position: absolute;
+    left: 26rem;
+    top: 2.7rem;
+    transition: 0.6s;
+}
+
+.easter-egg:hover {
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    background-image: url(components/Inverted_pentagram.svg.png);
+    transition: 3s linear;
+    transform-origin: center center;
+    animation-name: rotate;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+
+}
+
+@keyframes rotate { 100% {
+    background-image: url(components/Inverted_pentagram.svg.png);
+    transform: rotate(360deg); 
+    background-color: darkred;  
+}
+}

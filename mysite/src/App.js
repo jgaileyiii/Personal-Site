@@ -31,6 +31,7 @@ class App extends Component {
           </Router>
           <div className="custom-footer"></div>
           <div className="custom-header"></div>
+          <a className="easter-egg" href="https://www.youtube.com/watch?v=z8ZqFlw6hYg"></a>
           <div className="copyright">© JMW 2020</div>
 
       </div>
