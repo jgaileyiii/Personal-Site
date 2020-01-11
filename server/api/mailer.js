@@ -1,18 +1,21 @@
 const express = require('express')
 const router = express.Router()
 const nodemailer = require('nodemailer')
+const credentials = require('./config')
 const cors = require('cors')
-const credentials = ('../config')
 
 const transport = {
-    host: '*',
-    port: 4000,
+    host: 'smtp.gmail.com',
+    port: 587,
     auth: {
+    //   type: 'OAuth2',
       user: credentials.email,
       pass: credentials.pass
-    }
+    },
+    // debug: true,
+    // logger: true
 }
-
+console.log('email', credentials.email)
 const transporter = nodemailer.createTransport(transport)
 
 transporter.verify((error, success) => {
@@ -24,10 +27,10 @@ transporter.verify((error, success) => {
 })
 
 router.post('/send', (req, res, next) => {
-    const content = `name: ${req.body.name} \n email: ${req.body.email} \n message: ${req.body.message}`
+    const content = `name: ${req.body.name} \n email: ${req.body.email} \n message: ${req.body.content}`
     const message = {
         from: req.body.name,
-        to: credentials.email,
+        to: "jvgaileyiii@gmail.com",
         subject: "New message from Contact Form",
         text: content
     }
@@ -45,8 +48,11 @@ router.post('/send', (req, res, next) => {
     })
 })
 
+module.exports = router
+
 const app = express()
 app.use(cors())
 app.use(express.json())
 app.use('/', router)
-app.listen(3000)
+
+
