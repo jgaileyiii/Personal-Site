@@ -1,0 +1,32 @@
+.links {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 18rem;
+    margin-top: 10rem;
+}
+
+.linked-in {
+    background-image: url(LinkImages/linkedin.png);
+    height: 100px;
+    width: 100px;
+    text-decoration: none;
+    color: black;
+}
+
+.github {
+    background-image: url(LinkImages/github.png);
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.medium {
+    background-image: url(LinkImages/medium.png);
+    height: 100px;
+    width: 100px;
+    text-decoration: none;
+    color: black;
+}
