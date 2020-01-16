@@ -17,10 +17,10 @@ class App extends Component {
             <Link className="full-name" to='/home/'>Joseph Vance Gailey III</Link>
           </header>
             <div className="nav">
-              <Link className='link' to='/home/'>Home</Link>
-              <Link className='link' to='/about/'>About</Link>
-              <Link className='link' to='/links/'>Links</Link>
-              <Link className='link' to='/contact/'>Contact</Link>
+              <Link className='link' to='/home/'>HOME</Link>
+              <Link className='link' to='/about/'>ABOUT</Link>
+              <Link className='link' to='/links/'>LINKS</Link>
+              <Link className='link' to='/contact/'>CONTACT</Link>
             </div>
             <Switch>
               <Route path='/home/' component={Home}/>

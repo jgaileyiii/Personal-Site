@@ -8,12 +8,10 @@ const transport = {
     host: 'smtp.gmail.com',
     port: 587,
     auth: {
-    //   type: 'OAuth2',
+      type: 'login',
       user: credentials.email,
       pass: credentials.pass
-    },
-    // debug: true,
-    // logger: true
+    }
 }
 console.log('email', credentials.email)
 const transporter = nodemailer.createTransport(transport)
