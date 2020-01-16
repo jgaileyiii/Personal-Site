@@ -10,7 +10,7 @@ export default class Contact extends Component {
             email: "",
             content: ""
         },
-        messageSuccess: null
+        messageAttempt: null
     }
 
     handleChange = property => event => {
@@ -23,18 +23,7 @@ export default class Contact extends Component {
 
     handlePromise = response => {
         console.log(response)
-        if (response.status === 'Success'){
-            return (
-                console.log("Success")
-            )
-            && this.setState({ messageSuccess: true})
-        }
-        else {
-            return (
-                console.log("Failed")
-            )
-        }
-        
+        this.setState( { messageAttempt: response.status })
     }
 
     handleSubmit = event => {
@@ -51,14 +40,27 @@ export default class Contact extends Component {
         .then(this.handlePromise)
     }
 
+    messageResponse = () => {
+        const status = this.state.messageAttempt
+        if (status === 'Success'){
+            return (
+                <div className="message-sent">MESSAGE SENT</div>
+                )
+        } else { 
+            if (status === 'Failure'){
+                return (
+                    <div className="message-sent">MESSAGE FAILED, PLEASE TRY AGAIN</div>
+                    )
+                }
+            }
+    }
+
     
 
     render(){
-        const sentMessage = this.state.messageSuccess
         return (
-            sentMessage === true ?
-             <div className="message-sent">MESSAGE SENT</div>
-            : <div className="contact-form">
+            this.state.messageAttempt === null ?
+             <div className="contact-form">
                 <h1>CONTACT ME</h1>
                 <form onSubmit={this.handleSubmit}>
                     <input type="text" placeholder="Your Name" name="name" onChange={this.handleChange('name')}required />
@@ -67,6 +69,7 @@ export default class Contact extends Component {
                     <input className="submit" type="submit" value="SEND"/>
                 </form>
             </div>
+            : this.messageResponse()
         )
     }
 }
