@@ -30,6 +30,8 @@ p {
     background-image: url(./mypicture.jpg);
     width: 400px;
     height: 550px;
+    border-left: solid white 1px;;
+    border-right: solid white 1px;;
 }
 
 .content {

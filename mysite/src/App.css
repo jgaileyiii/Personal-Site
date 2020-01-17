@@ -60,10 +60,9 @@ body {
 .full-name:hover {
     background: white;
     color: black;
-    outline: 3px solid black;
+    outline: 3px solid white;
     width: 100%;
-    margin-right: 30%;
-    outline-offset: -8px;
+    outline-offset: 10px;
     transition: 1s;
     transition-timing-function: ease-out;
 }
@@ -180,7 +179,7 @@ header {
 .copyright:hover {
     transition: 0.7s;
     color: white;
-    font-size: 20pt;
+    font-size: 18pt;
     display: flex;
     flex-direction: column;
     justify-content: center; 
@@ -189,6 +188,8 @@ header {
     padding-right: 10px;
     height: 15rem;
     width: 4rem;
+    outline: solid white 1px;
+    outline-offset: 10px;
 }
 
 .easter-egg {
