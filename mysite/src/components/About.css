@@ -1,0 +1,40 @@
+.about {
+    margin-left: 25%;
+}
+
+.title {
+    width: 75%;
+    height: 4rem;
+    margin-top: 0;
+    margin-left: 0;
+    width: 100%;
+    font-family: 'Titillium Web', sans-serif;
+    color: white;
+    font-weight: 200;
+    border-bottom: solid white 1px;
+    border-top: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    font-family: 'Titillium Web', sans-serif;
+    color: white;
+    height: 20rem;
+    width: 30rem;
+    margin: 2rem;
+}
+
+.mypic {
+    background-image: url(./mypicture.jpg);
+    width: 400px;
+    height: 550px;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    margin-left: 2rem;
+}
+
