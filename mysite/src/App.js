@@ -14,7 +14,7 @@ class App extends Component {
       <div className="joes-site">
         <Router>
           <header>
-            <Link className="full-name" to='/'>Joseph Vance Gailey III</Link>
+            <Link className="full-name" to='/home/'>Joseph Vance Gailey III</Link>
           </header>
             <div className="nav">
               <Link className='link' to='/home/'>HOME</Link>
