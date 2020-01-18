@@ -15,7 +15,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(cors())
-// app.listen(3000)
+const port = process.env.PORT || 4000;
+app.listen(port)
 
 app.use('/api/mailer', mailer)
 

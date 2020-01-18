@@ -29,7 +29,7 @@ export default class Contact extends Component {
     handleSubmit = event => {
         event.preventDefault()
         const { name, email, content } = this.state.message
-        fetch('http://localhost:3000/api/mailer/send',{
+        fetch('http://localhost:4000/api/mailer/send',{
             method: "POST",
             headers: {
                 'Accept': 'application/json',
