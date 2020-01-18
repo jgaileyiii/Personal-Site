@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "nodemon ./app.js",
+    "start": "nodemon ./bin/www",
     "start-dev": "nodemon ./app.js",
     "build": "webpack",
     "heroku-postbuild": "echo Skip build on Heroku"
