@@ -19,6 +19,9 @@ const port = process.env.PORT || 4000;
 app.listen(port)
 
 app.use('/api/mailer', mailer)
+app.get('/', function(req, res){
+  res.redirect('/api/mailer');
+});
 
 
 // catch 404 and forward to error handler
