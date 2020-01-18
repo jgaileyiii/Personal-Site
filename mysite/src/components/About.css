@@ -24,10 +24,12 @@
 p {
     font-family: 'Titillium Web', sans-serif;
     color: white;
-    height: 15rem;
+    height: 30rem;
     width: 30rem;
     margin: 2rem;
     margin-top: 1.5rem;
+    overflow: hidden;
+    overflow-y: scroll;
 }
 
 .mypic {
