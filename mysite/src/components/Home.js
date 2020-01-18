@@ -35,6 +35,7 @@ export default function Home () {
                     <ul className="guitar-skills">
                         <li className="items">Over 20 years of experience</li>
                         <li className="items">Suzuki Teacher Certified</li>
+                        <li className="items">Specialist in Baroque and Early Music</li>
                         <li className="items">Contact for Booking and Lessons</li>
                     </ul>
                 </li>
