@@ -15,8 +15,9 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(cors())
-const PORT = process.env.PORT || 4000;
-app.listen(PORT)
+const host = '0.0.0.0';
+const port = process.env.PORT || 4000
+app.listen(port, host)
 
 app.use('/api/mailer', mailer)
 app.get('/', function(req, res){
