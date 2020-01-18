@@ -1,14 +1,81 @@
-h3 {
-    width: 75%;
+.home {
     margin-left: 25%;
-    margin-top: 9%;
+   
+}
+
+h3 {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 0;
     height: 4rem;
     font-family: 'Titillium Web', sans-serif;
     color: white;
     font-weight: 200;
-    border-top: solid white 1px;
     border-bottom: solid white 1px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.skill-overview-list {
+    height: 25rem;
+    width: 30rem;
+    overflow: hidden;
+    overflow-y: scroll;
+    font-family: 'Titillium Web', sans-serif;
+    color: white;
+    margin: 3rem;
+    margin-left: 5rem;
+    margin-right: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.title1 {
+    font-size: 24pt;
+    list-style: none;
+    margin-top: 13rem;
+}
+.title2 {
+    font-size: 24pt;
+    list-style: none;
+}
+
+.header {
+    font-size: 20pt;
+    list-style: none;
+    margin: 0.5rem
+}
+
+.header2 {
+    font-size: 18pt;
+    list-style: none;
+    margin-left: 1rem;
+}
+
+.items {
+    margin: 0.5rem;
+    margin-left: 2rem;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+}
+
+.my-picture1 {
+    background-image: url(./LinkImages/guitar.png);
+    height: 600px;
+    width: 369px;
+}
+
+.image-container {
+    max-height: 538px;
+    max-width: 400px;
+    margin-right: 7rem;
+    overflow: hidden;
+    border-left: solid white 1px;
+    border-right: solid white 1px;
 }

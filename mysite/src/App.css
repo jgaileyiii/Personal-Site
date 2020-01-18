@@ -196,7 +196,7 @@ header {
     height: 20px;
     width: 20px;
     border-radius: 50%;
-    background-image: url(components/p.png);
+    background-image: url(components/LinkImages/p.png);
     position: absolute;
     left: 26.4rem;
     top: 2.7rem;
@@ -220,7 +220,7 @@ header {
 }
 
 @keyframes rotate { 100% {
-    background-image: url(components/p.png);
+    background-image: url(./components/LinkImages/p.png);
     transform: rotate(360deg); 
     background-color: darkred;  
 }
