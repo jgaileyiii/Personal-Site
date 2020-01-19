@@ -5,8 +5,7 @@
   "scripts": {
     "start": "nodemon ./bin/www",
     "start-dev": "nodemon ./app.js",
-    "build": "webpack",
-    "heroku-postbuild": "echo Skip build on Heroku"
+    "build": "webpack"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
