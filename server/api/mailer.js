@@ -52,6 +52,6 @@ const app = express()
 app.use(cors())
 app.use(express.json())
 app.use('/', router)
-app.listen(process.env.PORT, '0.0.0.0')
+app.listen(process.env.PORT || 4000, '0.0.0.0')
 
 

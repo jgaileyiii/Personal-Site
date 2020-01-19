@@ -21,7 +21,7 @@ app.listen(port, host)
 
 app.use('/api/mailer', mailer)
 app.get('/', function(req, res){
-  res.redirect(mailer);
+  res.redirect('/api/mailer', mailer);
 });
 
 
