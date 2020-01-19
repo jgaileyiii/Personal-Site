@@ -20,7 +20,8 @@ app.use('/api/mailer', mailer)
 app.get('/', function(req, res){
   res.redirect('/api/mailer', mailer);
 });
-
+const port = process.env.PORT || 3000;
+app.listen(port)
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
