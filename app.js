@@ -12,7 +12,7 @@ const host = '0.0.0.0'
 const app = express();
 
 
-const mailer = require('./api/mailer')
+const mailer = require('./server/api/mailer')
 
 
 app.use(logger('dev'));
