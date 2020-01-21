@@ -4,12 +4,13 @@ const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const cors = require('cors')
+const PORT = process.env.PORT || 3000;
+const host = '0.0.0.0'
+
+
 
 const app = express();
-const host = '0.0.0.0'
-const port = process.env.PORT || 3000;
 
-app.listen(port, host)
 
 const mailer = require('./api/mailer')
 
@@ -22,6 +23,7 @@ app.use(cors())
 
 app.use('/api/mailer', mailer)
 
+app.listen(PORT, host)
 
 
 // catch 404 and forward to error handler
